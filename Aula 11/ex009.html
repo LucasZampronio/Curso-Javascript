@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    País de origem: <input type="text" name="txtpais" id="txt">
+    <input type="button" value="Confirma" onclick="clicar()">
+    <div id="Nac"></div>
+    <script>
+        function clicar() {
+
+            var país = window.document.querySelector('input#txt')
+            var nac = window.document.querySelector('div#Nac')
+            var lugar = String(txt.value)
+
+            nac.innerHTML = `<p>Seu país de origem é <strong>${lugar}}</strong></p>`
+
+            if (lugar == 'brasil' && 'Brasil') {
+                nac.innerHTML += '<p> Você é Brasileiro!</p>'
+            }
+            else {
+                nac.innerHTML += '<p> Você é Estrangeiro!</p>'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

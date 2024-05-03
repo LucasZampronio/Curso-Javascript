@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de voto</title>
+</head>
+
+<body>
+    <h1>Descubra se seu voto é obrigatorio ou opcional.</h1>
+
+    Sua idade: <input type="text" name="valorid" id="valorid">
+
+    <input type="button" value="Confirma" onclick="(clicou())">
+
+    <div id="res"></div>
+
+    <script>
+
+        function clicou() {
+
+            var caixadetexto = window.document.querySelector('input#valorid')
+            var idade = Number(valorid.value)
+            var resultado = window.document.querySelectorAll('div#res')
+
+
+            if (idade < 16) {
+                window.alert('Não vota!')
+            } else if (idade < 18 || idada > 65) {
+                window.alert('voto opcional')
+            } else {
+                window.alert('voto obrigatorio!')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
